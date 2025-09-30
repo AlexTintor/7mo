@@ -29,6 +29,6 @@ JSON
 "_id" 1,
 "name":{"first": "John", "last": "Doe"} 	<- Documento dentro de documento    
 
-**Embebido y referencial**  
+### **Embebido y referencial**  
 Embebido: BD dentro de BD  
 Referencia: Hace referencia a una tabla  
