@@ -1,3 +1,5 @@
+# NoSQL
+
 Busca la **disponibilidad** sacrificando la **concistencia**  
 
 - Relacional -> tabla_llave_primaria_etc  
@@ -11,7 +13,7 @@ NoSQL:				<- Modelos lógicos
 
 Cada manejador tiene su estructura de almacenamiento    
 
-# *MONGO*  
+## *MONGO*  
 Ejemplo  
   
 {  
