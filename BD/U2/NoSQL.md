@@ -11,7 +11,7 @@ NoSQL:				<- Modelos lógicos
 
 Cada manejador tiene su estructura de almacenamiento    
 
-*MONGO*  
+#*MONGO*  
 Ejemplo  
   
 {  
