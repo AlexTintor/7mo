@@ -1,0 +1,106 @@
+!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+!^^^^^^^^^^^^^^^^^^^^^^ RA
+enable
+configure terminal
+hostname RA
+
+no ip domain-lookup
+no logging console
+
+ipv6 unicast-routing
+
+interface GigabitEthernet 0/0
+ description Lan de RA 
+ ipv6 address 2001:BACA:FEA:1::1/64
+ IPV6 address FE80:1::1 link-local
+ no shutdown
+exit
+
+interface Serial 0/0/0
+ description Wan de RA a RB
+ ipv6 address 2001:BACA:FEA:4::1/64
+ IPV6 address FE80:4::1 link-local
+ no shutdown
+exit
+
+!Enrutamiento
+ipv6 route 2001:BACA:FEA:2::/64 2001:BACA:FEA:4::2
+ipv6 route 2001:BACA:FEA:3::/64 2001:BACA:FEA:4::2
+
+
+
+!^^^^^^^^^^^^^^^^^^^^^^ Sw_C2_T1_00
+enable
+configure terminal
+hostname Sw_C2_T1_00
+
+no ip domain-lookup
+no logging console
+
+sdm prefer dual-ipv4-and-ipv6 default
+do write
+do reload
+
+interface vlan 1
+  ipv6 address 2001:BACA:FEA:1::2/64
+  ipv6 address FE80:1::2 link-local
+  no shutdown
+exit
+
+
+
+!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+!^^^^^^^^^^^^^^^^^^^^^^ RB
+enable
+configure terminal
+hostname RB
+
+no ip domain-lookup
+no logging console
+
+ipv6 unicast-routing
+
+interface GigabitEthernet 0/0
+ description Lan de Rb 
+ ipv6 address 2001:BACA:FEA:2::1/64
+ IPV6 address FE80:2::1 link-local
+ no shutdown
+exit
+
+interface Serial 0/0/0
+ description Wan de RB a RC
+ ipv6 address 2001:BACA:FEA:5::1/64
+ IPV6 address FE80:5::1 link-local
+ no shutdown
+exit
+
+interface Serial 0/0/1
+ description Wan de RB a RA
+ ipv6 address 2001:BACA:FEA:4::2/64
+ IPV6 address FE80:4::2 link-local
+ no shutdown
+exit
+
+!Enrutamiento
+ipv6 route 2001:BACA:FEA:2::/64 2001:BACA:FEA:4::2
+ipv6 route 2001:BACA:FEA:3::/64 2001:BACA:FEA:4::2
+
+
+
+!^^^^^^^^^^^^^^^^^^^^^^ Sw_C2_T1_00
+enable
+configure terminal
+hostname Sw_C2_T1_00
+
+no ip domain-lookup
+no logging console
+
+sdm prefer dual-ipv4-and-ipv6 default
+do write
+do reload
+
+interface vlan 1
+  ipv6 address 2001:BACA:FEA:1::2/64
+  ipv6 address FE80:1::2 link-local
+  no shutdown
+exit
