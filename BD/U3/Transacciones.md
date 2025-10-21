@@ -10,6 +10,7 @@ DELETE ADULTOS_Usuarios...
 - Aqui si una falla la otra no le afecta
 - Esto deja basura si una falla y la otra se completa
 
+```markdown
 ## Transaccion EXPLICITA
 BEGIN TRAN  
   DELETE USUARIOS...  
