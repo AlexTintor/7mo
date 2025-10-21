@@ -20,5 +20,6 @@ COMMIT TRAN
 - Para que AMBAS SE COMPLETEN, ambas deben salir bien.
   
 ---
-
+---
+  
 jijia
