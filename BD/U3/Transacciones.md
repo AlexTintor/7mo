@@ -4,16 +4,16 @@ la transaccion de DELETE debe ser GRUPAL, es decir, se deben
 hacer las 2 a las. Se quiere que ambas transacciones salgan BIEN,  
 no que si 1 sale MAL la otra pueda salir BIEN.
 
-```IMPLICITA
 ## Transaccion IMPLICITA
+```IMPLICITA
 DELETE USUARIOS...  
 DELETE ADULTOS_Usuarios...  
 ```
 - Aqui si una falla la otra no le afecta
 - Esto deja basura si una falla y la otra se completa
   
-```EXPLICITA
 ## Transaccion EXPLICITA
+```EXPLICITA
 BEGIN TRAN  
   DELETE USUARIOS...  
   DELETE ADULTOS_Usuarios...  
