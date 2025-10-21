@@ -18,3 +18,7 @@ COMMIT TRAN
 - Aqui ambas transacciones implicitas se hacen a la par.
 - Si una falla, la otra tambien.
 - Para que AMBAS SE COMPLETEN, ambas deben salir bien.
+  
+---
+
+jijia
