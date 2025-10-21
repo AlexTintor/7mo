@@ -22,4 +22,16 @@ COMMIT TRAN
 ---
 ---
   
-jijia
+## @@TRANCOUNT
+Cuenta las transacciones activas existen.  
+  
+Begin tran           ->      @@trancount = 1
+  Insert..
+  
+  Begin tran        ->       @@trancount = 2
+    Delete
+    Update
+  Commit tran       ->       @@trancount = 1
+  
+  Delete
+Commit tran        ->       @@trancount = 0
