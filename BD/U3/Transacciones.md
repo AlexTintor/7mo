@@ -4,34 +4,26 @@ la transaccion de DELETE debe ser GRUPAL, es decir, se deben
 hacer las 2 a las. Se quiere que ambas transacciones salgan BIEN,  
 no que si 1 sale MAL la otra pueda salir BIEN.
 
-```Transaccion IMPLICITA
+```IMPLICITA
 ## Transaccion IMPLICITA
 DELETE USUARIOS...  
 DELETE ADULTOS_Usuarios...  
+```
 - Aqui si una falla la otra no le afecta
 - Esto deja basura si una falla y la otra se completa
-```
-
+  
+```EXPLICITA
 ## Transaccion EXPLICITA
 BEGIN TRAN  
   DELETE USUARIOS...  
   DELETE ADULTOS_Usuarios...  
 COMMIT TRAN  
+```
 - Aqui ambas transacciones implicitas se hacen a la par.
 - Si una falla, la otra tambien.
 - Para que AMBAS SE COMPLETEN, ambas deben salir bien.
   
 ---
-### Ejemplo de Transacción
-
-El siguiente ejemplo muestra cómo usar transacciones en SQL.
-
-```sql
-BEGIN TRAN  
-    DELETE USUARIOS...  
-    DELETE ADULTOS_Usuarios...  
-COMMIT TRAN
-
 ---
   
 ## @@TRANCOUNT
