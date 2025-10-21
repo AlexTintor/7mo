@@ -22,6 +22,16 @@ COMMIT TRAN
 - Para que AMBAS SE COMPLETEN, ambas deben salir bien.
   
 ---
+### Ejemplo de Transacción
+
+El siguiente ejemplo muestra cómo usar transacciones en SQL.
+
+```sql
+BEGIN TRAN  
+    DELETE USUARIOS...  
+    DELETE ADULTOS_Usuarios...  
+COMMIT TRAN
+
 ---
   
 ## @@TRANCOUNT
