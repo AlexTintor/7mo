@@ -40,3 +40,9 @@ Begin tran           ->      @@trancount = 1
   Delete  
 Commit tran        ->       @@trancount = 0  
 ```
+  
+## Transacciones ANIDADAS
+- ROLLBACK deja @@TranCount en 0
+- (ROLLBACK TRAN deja el valor que estaba @@trancound antes de hacer la transaccion)
+- Se debe validar, RETURN o algo asi (return nos saca de todas las transacciones)
+
