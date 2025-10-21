@@ -28,7 +28,7 @@ COMMIT TRAN
   
 ## @@TRANCOUNT
 Cuenta las transacciones activas existen.  
-  
+```
 Begin tran           ->      @@trancount = 1  
   Insert..  
     
@@ -39,3 +39,4 @@ Begin tran           ->      @@trancount = 1
     
   Delete  
 Commit tran        ->       @@trancount = 0  
+```
