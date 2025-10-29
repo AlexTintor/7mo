@@ -12,7 +12,7 @@ TO DISK = 'C:\data\basededatos_nombre-dif.bak'
 WITH DIFFERENTIAL;    
 ´´´
   
-## Respaldo TRANSACCIONAL
+``## Respaldo TRANSACCIONAL
 BACKUP LOG basededatos_nombre  
-TO DISK = 'C:\data\basededatos_nombre-log.bak';
+TO DISK = 'C:\data\basededatos_nombre-log.bak';``
 
