@@ -3,7 +3,7 @@
     ->  ejemplo.ldf (archivo de transacciones LOG)  
 
 ## Validaciones
-'''asda
+```asda
 Begin tran
   insert into loan
   if error..
@@ -14,11 +14,21 @@ Begin tran
   update copy
   if .. error
     rollback tran
-'''
+    RETURN
+  END
+```
 
 ## Atomicidad
 Se realicen todas las instrucciones de la transaccion
+- Commit
 
 ## Percistencia
 Cambios se guardan en el Disco Duro
+- Update
+- Insert
+- CKP
+
+### Es inconsistente cuando:
+Solo es o Atomica o Persistente
+
 
