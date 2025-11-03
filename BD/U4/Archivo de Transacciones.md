@@ -26,9 +26,10 @@ Se realicen todas las instrucciones de la transaccion
 Cambios se guardan en el Disco Duro
 - Update
 - Insert
-- CKP
+- CKP (Check Pint)
 
 ### Es inconsistente cuando:
 Solo es o Atomica o Persistente
+
 
 
