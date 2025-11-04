@@ -1,4 +1,4 @@
-## Lectura fantasma 
+# Lectura fantasma 
   
 ```
 Begin tran t1  
@@ -16,7 +16,7 @@ commit
 ```
 El manejador hace un UNDO, porque puede generar un error debido a esa transacion fantasma  
 
-## Leer lecturas fantasmas
+# Leer lecturas fantasmas
 ```
 SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;  
 ```
