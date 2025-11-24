@@ -355,4 +355,17 @@ EXIT
 
 
 
+
+!----------
+! Rutas Estáticas Flotantes (AD 130) hacia las redes del ROUER_DERECHA.
+! Estas solo se activan si falla la ruta de RIP (AD 120).
+ip route 192.168.10.0 255.255.255.0 10.10.10.2 130
+ip route 192.168.20.0 255.255.255.0 10.10.10.2 130
+ip route 192.168.30.0 255.255.255.0 10.10.10.2 130
+ip route 192.168.98.0 255.255.255.0 10.10.10.2 130
+ip route 192.168.99.0 255.255.255.0 10.10.10.2 130
+
+
+
+
  
