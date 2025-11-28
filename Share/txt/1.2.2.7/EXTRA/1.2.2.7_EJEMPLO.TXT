@@ -1,0 +1,7 @@
+1.2.2.7_OFICIO_COMISION:
+VAR_OFICIO_COMISION: DDA/PE-001/2024, CUL/DDIE-007/2024, 500/COM/NOV24
+VAR_NOMBRE_DOCENTE: Norma Rebeca Godoy Castro, Juan Carlos Parra Ruiz, Diana Patricia Castro Moreno
+VAR_NOMBRE_CURSO: Diplomado en Tecnologías 4.0, Curso de Economía Circular, Diplomado en Innovación Educativa
+VAR_FECHA_INICIO_COMISION: 01 de noviembre de 2024, 10/12/2024, 15 de septiembre de 2024
+VAR_FECHA_FIN_COMISION: 30 de diciembre de 2024, 20/01/2025, 30 de octubre de 2024
+VAR_NOMBRE_JEFE_DDA: Lic. Ana Bertha Soto, M.C. Efrén Guzmán, Ing. Pedro Rivas

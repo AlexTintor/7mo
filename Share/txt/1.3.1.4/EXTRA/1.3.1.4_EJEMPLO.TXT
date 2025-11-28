@@ -1,0 +1,17 @@
+VAR_FOLIO: M-025/2024, 45/DEP-2024, AC-2024-001
+VAR_HORA: 10:30, 16:00, 9:00
+VAR_DIA: 20, 05, 12
+VAR_MES: Enero, Septiembre, Mayo
+VAR_AÑO: 2024, 2025, 2023
+VAR_SALA: "Sala de Usos Múltiples de Posgrado", "Sala de Directores", "Aula 201"
+VAR_NOMBRE_SUSTENTANTE: María Fernanda Robles Sánchez, Carlos Alberto González Díaz, Juana Lizbeth Pérez Castro
+VAR_NOCONTROL: 19170500, P20210080, 18451122
+VAR_NOMBRE_PROGRAMA: Ciencias de la Computación, Ingeniería Bioquímica, Ciencias en Alimentos
+VAR_TITULO_TESIS: "Diseño de un Modelo Predictivo Basado en IA", "Optimización del Proceso de Fermentación de Lácteos", "Evaluación de la Eficiencia Energética en Sistemas Embebidos"
+VAR_NOMBRE_DIRECTOR: Dr. José Luis Soto Ibarra, Dra. Ana María Rivas López, M.C. Juan Carlos Parra Ruiz
+VAR_NOMBRE_CODIRECTOR: Dra. Diana Patricia Castro Moreno, M.C. Efrén Guzmán López, Dr. Omar Torres Núñez
+VAR_NOMBRE_PRESIDENTE: Dr. Rogelio Miranda Cárdenas, M.C. Sofía Pérez Ríos, Dra. Elena Valdez Sánchez
+VAR_NOMBRE_SECRE: M.C. Héctor Gámez Beltrán, Dra. Juana Rivas Soto, Dr. Pedro Villa Casco
+VAR_NOMBRE_VOCAL: Dr. Martín Estela Valenzuela Tirado, M.C. Norma Rebeca Godoy Castro, Ing. Ramón Soto Páez
+VAR_RESULTADO: APROBADO por Unanimidad, APROBADO por Mayoría, APROBADO por Elogio
+VAR_OTRO_TEXTO_APROBACION: APTO para obtener el Grado de Maestro(a), ACREDITADO para obtener el Grado de Maestro(a), LIBERADO para la titulación de Grado

@@ -1,0 +1,47 @@
+cd C:\mongodb\bin
+/*es neceario crear la carpeta datos en c:\. y dentro de la carpeta datos crear las carpetas nodo4, nodo5 y nodo6.*/
+
+mongod --replSet rs0 --port 27017 --bind_ip 127.0.0.1 --dbpath /datos/nodo4  --oplogSize 120
+
+mongod --replSet rs0 --port 27018 --bind_ip 127.0.0.1 --dbpath /datos/nodo5  --oplogSize 120
+
+mongod --replSet rs0 --port 27019 --bind_ip 127.0.0.1 --dbpath /datos/nodo6  --oplogSize 120
+
+mongod  --port 27017 --dbpath /datos/nodo1  --oplogSize 120
+
+mongo --port 27017
+mongo --port 27018
+mongo --port 27019
+
+rs.initiate ({
+                    _id: "rs0",
+                    members: [
+                       {
+                         _id: 0,
+                         host: "127.0.0.1:27017"
+                       },
+                       {
+                         _id: 1,
+                         host: "127.0.0.1:27018"
+                       },
+                      {
+                         _id: 2,
+                         host: "127.0.0.1:27019"
+                       }
+                       ]
+                     }
+                    )  
+
+
+Pruebas: para ver la replicacion se debe hacer lo siguiente:
+1.-  ---crear una bd en el primario
+use bd 
+db.emp.insert({"id":1, "name":"juaniuo2"})
+db.emp.find().forEach(printjson)
+
+2.- ----para leer las Bds en los secundarios
+rs.slaveOk()
+---despues de poner la funcion slaveOK() se debe poner en uso la Bds. 
+use Bd
+db.emp.find().forEach(printjson)
+

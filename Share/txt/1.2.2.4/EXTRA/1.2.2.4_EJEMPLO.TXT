@@ -1,0 +1,9 @@
+1.2.2.4_CONSTANCIA_DDIE:
+VAR_FOLIO_CONSTANCIA: DDIE/DFDT-150/2024, CUL/CONST-01/2024, 025/CONST/JUN24
+VAR_NOMBRE_DOCENTE: Norma Rebeca Godoy Castro, Juan Carlos Parra Ruiz, Diana Patricia Castro Moreno
+VAR_DURACION_HRS: 120, 80, 40
+VAR_PERIODO: 01 de abril al 30 de junio de 2024, 15 de mayo al 15 de julio de 2024, Enero a Mayo de 2024
+VAR_DIA: 20, 10, 05
+VAR_MES: Julio, Diciembre, Marzo
+VAR_ANIO: 2024, 2025, 2023
+VAR_NOMBRE_DIRECTOR_DDIE: Mtro. Mario Alberto González, M.C. Julia Espinoza, Dr. Javier Solano

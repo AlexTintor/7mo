@@ -1,0 +1,7 @@
+1.2.2.2_OFICIO_COMISION:
+VAR_OFICIO_COMISION: DDA/DDIE-001/2024, CUL/DDIE-002/2024, 180/COM/JUN24
+VAR_NOMBRE_DOCENTE: Norma Rebeca Godoy Castro, Juan Carlos Parra Ruiz, Diana Patricia Castro Moreno
+VAR_NOMBRE_CURSO: "Desarrollo de Competencias Digitales Docentes", "Diseño Curricular con Enfoque por Competencias", "Evaluación de los Aprendizajes"
+VAR_FECHA_INICIO_COMISION: 10 de marzo de 2024, 01/08/2024, 15 de julio de 2024
+VAR_FECHA_FIN_COMISION: 10 de abril de 2024, 30/08/2024, 25 de julio de 2024
+VAR_NOMBRE_JEFE_DDA: Lic. Ana Bertha Soto, M.C. Efrén Guzmán, Ing. Pedro Rivas
